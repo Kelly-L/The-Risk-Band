@@ -1,0 +1,35 @@
+/* ******GLOBAL STYLES ****** */
+
+body {
+	font-family: 'Cabin', sans-serif;
+	font-size: 18px;
+	color: #383842;
+	background-image: url("../images/background2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-weight: lighter;
+}
+
+h2, h3 {
+	font-variant: small-caps;
+}
+	
+/* ****** GRID ****** */
+	
+.full-width {
+	width: 100%x;
+	margin: 0px auto;
+	overflow:auto;
+}
+	
+
+.center {
+    display: block;
+	margin: 0 auto;
+    width: 100%;
+}
+
+img {
+	width: 100%;
+}
+

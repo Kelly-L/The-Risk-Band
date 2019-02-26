@@ -1,0 +1,138 @@
+/* ******GLOBAL STYLES ****** */
+
+html, body {
+  	margin: 0px;
+  	font-size: 16px; /* sets base-font size globally to 16px which is 1em. Makes 1em 16px in size */
+  	font-family: 'Cabin', sans-serif;
+  	font-weight: lighter;
+  	color: #383842;
+}
+
+body {
+
+	background-image: url("../images/background2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	overflow:auto;
+}
+
+.center {
+    display: block;
+	margin: 0 auto;
+    width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+img {
+	width: 100%;
+}
+
+h2, h3 {
+	font-variant: small-caps;
+}
+
+
+
+/* ****** HEADER ****** */
+
+header {
+  height: 300px;
+  width: 100%;
+  background: #e3e3e3;
+}
+	
+
+
+/* ****** CONTENT AREA applies to mobile phones first ****** */
+
+.col-style-1 { /* this col with have different styles according to media device. mainly the width. */
+  width: 100%; /* sets col width for a two-column layout as a mobile phone requires---*/
+  height: 320px;
+  float: left;
+}
+
+#column-1 {
+  background: #ffccff;
+}
+
+#column-2 {
+  background: #80ffe5;
+}
+
+#column-3 {
+  background: #ffffb3;
+}
+
+#column-4 {
+  background: grey;
+}
+
+
+
+/* ****** FOOTER ****** */
+
+footer {
+  width: 100%;
+  height: 30px;
+  background: #e3e3e3;
+}
+
+	
+	
+
+
+
+
+
+/* ****** MEDIA QUERIES - Applies over-rides to the above styles ****** */
+
+@media print{
+  body{
+    background:none;/* This code removes any background color when you print out the website */
+  }
+} /* Print media query closing bracket */
+
+
+/*---------- Tablets ----------*/
+@media (min-width 768px) {
+	/* styles browsers 768px and larger. standard for tablets */
+	
+	body {
+		background: red;
+	}
+   
+	.col-style-1 { /* this col with have different styles according to media device. mainly the width. */
+    width: 50%; /* sets col width for a two-column layout ---*/
+		
+	}
+	
+} /* Tablet media query closing bracket */
+
+
+/*---------- Desktops ----------*/
+@media (min-width 1200px) {
+	/* styles browsers 1200px and larger. standard for desktops */
+	
+	body {
+		background: blue;
+	}
+	
+	.col-style-1 { /* this col with have different styles according to media device. mainly the width. */
+    width: 33.3%; /* sets col width for a three-column layout ---*/
+	}
+	
+	.col-style-4 { /* this col with have different styles according to media device. mainly the width. */
+    width: 25%; /* sets col width for a four-column layout ---*/
+	}
+	
+} /* Desktop media query closing bracket */
+
+
