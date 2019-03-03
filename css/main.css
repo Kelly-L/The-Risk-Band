@@ -125,7 +125,7 @@ header .content-wrapper {
   margin: 10px 0 20px 0;
 }
 
-header nav {
+header nav {/*this also works without the flex items, Ask if this is necessary */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -163,13 +163,18 @@ footer .contact {
   margin-bottom: 50px;
 }
 
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
+  width: 50%;
 }
-
 
 footer .social-icons p {
   display: flex;
