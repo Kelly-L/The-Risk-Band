@@ -107,11 +107,22 @@ footer {
   flex-flow: row wrap;
 }
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -119,11 +130,14 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 52%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  padding: 0;
 }
 
 header nav ul li {
@@ -132,17 +146,53 @@ header nav ul li {
   width: 50px;
 }
 
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper{
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 60%;
 }
+
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+footer .copyright {
+  margin: 20px 0;
+  text-align: center;
+}
+
+footer .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:column wrap;
+}
+
+body {
+  background: #419ba2;
+}
+
 
  /* -------------------- Mobile Styles - Home Page -------------------- */
 
@@ -170,20 +220,59 @@ aside {
   flex-flow: row wrap;
 }
 
-/* Bio */
+/* Band & Bios */
 
-.bio {
+.band {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.bio .bio-items {
+.band h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.band article {
+  width: 55%;
+  margin: 30px 0;
+}
+
+.band .band-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+
+.band p {
+  margin: 0;
+}
+
+
+
+.band figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+  
+.band figcaption {
+  font-style: italic; 
+  text-align: center;
+}
+
+
+
+.band .band-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+  
 
 
 
