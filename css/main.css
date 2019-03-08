@@ -275,7 +275,7 @@ aside .content-wrapper {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  width: 230px;
+  width: 60%; /* this is the percentage width of the immediate parent div which in this case is .band-member-bio class assigned to the article tag for each band member. so .band-member-biophoto is 60% of .band-member-bio article*/
 }
 
 .band figcaption {
@@ -283,8 +283,7 @@ aside .content-wrapper {
   text-align: center;
 }
 
-
-
+/* - END Mobile Styles - Home Page  - */
 
 
 
@@ -386,11 +385,11 @@ aside .content-wrapper {
   margin: 0;
  }
 
+  
  /* Header */
  header { 
    justify-content: space-around;
  }
-
 
  header .content-wrapper {
    width: 100%;
@@ -420,15 +419,11 @@ aside .content-wrapper {
     flex-flow: row wrap;
     }
   
-  aside .content-wrapper .shows-description {
+  aside .content-wrapper .shows-description, aside .content-wrapper .form-contact {
     width: 50%;
     margin: 0;
-    }
+  }
 
-  aside .content-wrapper .form-contact {
-    width: 50%;
-    margin: 0;
-}
 
 /* Band About & Band Member Bios Section */
 
@@ -443,8 +438,9 @@ aside .content-wrapper {
   .band .band-about .band-about-description {
     width: 45%;
   }
-    .band .band-member-description {
-      width: 98%;
+  
+  .band .band-member-description {
+    width: 98%;
   }
 
 
@@ -469,13 +465,40 @@ footer .contact {
    width: 100%;
  }
   
-} /* End Tablet Styles */
+} /* End Tablet Styles Media Query */
 
-  @media only screen and (min-width: 1200px) {
-    /* Desktop styles here */
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
+   
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+    width: 60%;
+  }
+  
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }  
+
+  aside .content-wrapper .shows-description, aside .content-wrapper .form-contact {
+  width: 40%;
+  }
+  
+ /* Band Section & Bios */
+  .band .band-member-bio {
+    flex-basis: 10%;    
+  }
 
     
-} /* End Desktop Styles */
+} /* End Desktop Styles Media Query */
 
     
 
