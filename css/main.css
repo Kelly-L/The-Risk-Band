@@ -275,7 +275,7 @@ aside .content-wrapper {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  width: 60%; /* this is the percentage width of the immediate parent div which in this case is .band-member-bio class assigned to the article tag for each band member. so .band-member-biophoto is 60% of .band-member-bio article*/
+  width: 70%; /* this is the percentage width of the immediate parent div which in this case is .band-member-bio class assigned to the article tag for each band member. so .band-member-biophoto is 60% of .band-member-bio article*/
 }
 
 .band figcaption {
@@ -494,7 +494,7 @@ footer .contact {
   
  /* Band Section & Bios */
   .band .band-member-bio {
-    flex-basis: 10%;    
+    flex-basis: 25%;    
   }
 
     
