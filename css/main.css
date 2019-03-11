@@ -97,10 +97,60 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+ 
+html {
+	font-size: 16px;
+}
+ 
+body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  background: #419ba2;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 10px 0;
 }
+
+ul, 
+ol {
+  list-style-type: none;
+}
+ 
+a {
+  color: #a7dae1;
+  text-decoration: none;
+}
+ 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.675em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+ 
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+  
+address {
+ font-style: normal;
+}
+ 
 
 
  /* -------------------- Base Header - Footer Styles -------------------- */
@@ -115,6 +165,7 @@ footer {
 
 header {
   padding: 15px 0;
+  background: #3f4a4c;
 }
 
 header .content-wrapper {
@@ -136,7 +187,7 @@ header nav {/*this also works without the flex items, Ask if this is necessary *
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 52%;
+  width: 45%;
 }
 
 header nav ul {
@@ -154,43 +205,46 @@ header nav ul li {
 
 footer {
   flex-direction: column;
+  color: #aaadad;
+  background: #092629;
 }
 
 footer p {
   margin: 0;
 }
 
-footer .content-wrapper{
-  margin: 10px 0;
-}
-
-footer .contact, footer .social {
-  width: 50%;
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 55%;
+  margin: 30px 0 20px 0;
 }
 
 footer .contact {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 footer .copyright {
-  margin: 20px 0;
+ margin: 50px 0 0 0;
   text-align: center;
-}
-
-body {
-  background: #419ba2;
+  font-size: .80em;
 }
 
 
@@ -202,14 +256,21 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../images/hero-bg.jpg') center no-repeat #a7dae1;
+  background-size: cover;
 }
+
+.hero-area div {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}  
 
 .hero-area h1 {
-  display:flex;
+  display: flex;
   justify-content: center;
-}
+}  
 
-  
 
 /* Aside */
 
@@ -233,6 +294,8 @@ aside .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+    background: url('../images/main1-bg.jpg') center no-repeat #d61c22;
+  background-size: cover;
 }
 
 .band article { /* band mimics features */
@@ -260,6 +323,11 @@ aside .content-wrapper {
   width: 100%;
 }
 
+.band .band-about p {
+  font-weight: bold;
+  line-height: 1.87;
+}
+
 
 /* Band section's Band Member Bio Items */
 
@@ -281,6 +349,20 @@ aside .content-wrapper {
 .band figcaption {
   font-style: italic; 
   text-align: center;
+  margin: 0;
+}
+
+.band figcaption h2 {
+  font-style:normal; 
+  font-size: .90em;
+  margin: 0;
+}
+
+.band .band-member-description p {
+  font-size: .80em;
+  font-weight: bold;
+  margin-top: -10px;
+  width: 95%;
 }
 
 /* - END Mobile Styles - Home Page  - */
@@ -381,7 +463,7 @@ aside .content-wrapper {
 
  /*General styles */
  .content-wrapper {
-  max-width: 640px;
+  max-width: 671px;
   margin: 0;
  }
 
@@ -448,17 +530,18 @@ aside .content-wrapper {
 
 footer .content-wrapper {
   width: 100%;
-  margin: 20px 0;
 }
 
-.footer-content {
+ .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  width: 100%;
+  }
   
 footer .contact {
    margin-bottom: 0;
+
 }
 
  footer .copyright {
@@ -480,7 +563,7 @@ footer .contact {
 
   /* Hero */
   .hero-area h1 {
-    width: 60%;
+    width: 100%;
   }
   
   /* Aside */
