@@ -104,6 +104,7 @@ html {
 }
  
 body {
+  color: #000;
   font-size: 1em;
   font-family: 'Cabin', sans-serif;
   text-align: left;
@@ -112,7 +113,15 @@ body {
 
 .content-wrapper {
   width: 90%;
-  margin: 10px 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 ul, 
@@ -129,9 +138,10 @@ a {
 }
    
 h1 {
-  font-size: 2em;
+  font-size: 1.75em;
   margin-bottom: 0;
   font-weight:700;
+  text-align: center;
 }
 
 h2 {
@@ -174,6 +184,14 @@ footer {
 header {
   padding: 15px 0;
   background: #3f4a4c;
+}
+
+.header figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
 header .content-wrapper {
@@ -278,6 +296,13 @@ footer .copyright {
   flex-flow: row wrap;
 }  
 
+.hero-area figure{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: row wrap;
+}
+
 .hero-area h1 {
   display: flex;
   justify-content: center;
@@ -291,25 +316,33 @@ aside h3 {
   font-variant:small-caps;
 }
 
+aside a {
+  color: #0967f2;
+}
+
+
   
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: url('../images/main2-bg.jpg') right no-repeat #a7dae1;
+  background-size: cover;
 }
 
 aside .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-flow: column wrap;
 }
 
 .shows-description {
   border-radius: 25px;  
-  background: #afdbdf;
+  background: rgba(206, 241, 244, 0.75);
   text-align: center;
+  padding: 20px;
 }
 
 .shows-description h4 {
@@ -318,6 +351,7 @@ aside .content-wrapper {
 
 .form-contact {
   margin-top: 0px;
+  width: 50%;
 }
 
 .form-contact h3 {
@@ -338,6 +372,7 @@ aside input[type=text], aside input[type=email] {
   font-style: italic;
   border-radius: 10px;
   margin-bottom: 20px;
+  background: rgba(206, 241, 244, 0.75);
 }
  
 aside textarea {
@@ -345,11 +380,11 @@ aside textarea {
   padding: 10px;
   font-style: italic;
   border-radius: 10px;
+  background: rgba(206, 241, 244, 0.75);
 } 
   
 aside input[type=button] {
-  width: 45%;
-  padding: 20px 0;
+  padding: 10px;
   margin-top: 20px;
   margin-bottom: 60px;
   background-color: #2d6c84;
@@ -370,7 +405,7 @@ aside input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-    background: url('../images/main1-bg.jpg') center no-repeat #d61c22;
+    background: url('../images/main1-bg.jpg') left no-repeat #d61c22;
   background-size: cover;
 }
 
@@ -400,6 +435,7 @@ aside input[type=button] {
 }
 
 .band .band-about p {
+  font-size: 1.0825em;
   font-weight: bold;
   line-height: 1.87;
 }
@@ -577,8 +613,12 @@ aside input[type=button] {
     flex-flow: row wrap;
     }
   
-  aside .content-wrapper .shows-description, aside .content-wrapper .form-contact {
-    width: 50%;
+  .shows-description {
+    margin: 0;
+  }
+  
+  .form-contact {
+    width: 60%;
     margin: 0;
   }
 
